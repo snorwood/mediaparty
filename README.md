@@ -1,0 +1,1 @@
+Attempt at building a media server that allows you to listen to the same music while chatting with friends. Will add feature descriptions as they come.
