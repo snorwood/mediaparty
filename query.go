@@ -4,40 +4,32 @@ import (
 	"fmt"
 )
 
+// rowScanner allows items to be read from either a *sql.Rows or *sql.Row object
 type rowScanner interface {
 	Scan(...interface{}) error
 }
 
+// Table contains the table's indentity within the database
 type Table struct {
-	Schema string
-	Table  string
+	Schema    string
+	TableName string
 }
 
-func GetSongQuery(schema, table, artist, title, album, albumArtist string) (string, error) {
-	song := Song{
-		Artist:      artist,
-		Title:       title,
-		Album:       album,
-		AlbumArtist: albumArtist,
-	}
+// GetSongQuery builds a query to retrieve the given song
+func GetSongQuery(songTable Table, columnNames []string, song Song) (string, error) {
 
 	if !song.Valid() {
 		return "", InvalidSong(song)
 	}
 
-	songTable := Table{
-		Schema: schema,
-		Table:  table,
-	}
-
-	if schema == "" || table == "" {
+	if songTable.Schema == "" || songTable.Tableable == "" {
 		return "", fmt.Errorf("Invalid Table:\nschema=%s\ntable=%s", schema, table)
 	}
 
 	columns := struct {
 		Columns []string
 	}{
-		Columns: []string{},
+		Columns: columnNames,
 	}
 
 	querySegment := ""
@@ -59,6 +51,8 @@ func GetSongQuery(schema, table, artist, title, album, albumArtist string) (stri
 	return query, nil
 }
 
+// StringToPostgresString fixes all of the syntax from a normal
+// string that will mess up a postgresql query
 func StringToPostgresString(s string) string {
 	for i := 0; i < len(s); i++ {
 		escapeCharNext := (i < len(s)-1 && (string(s[i+1]) == "\\" || string(s[i+1]) == "'"))

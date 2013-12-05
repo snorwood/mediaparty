@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// Song base song class. Contains metadata and file location of song.
 type Song struct {
 	Artist      string
 	Album       string
@@ -13,6 +14,7 @@ type Song struct {
 	ID          int
 }
 
+// Valid returns whether the song has all of the neccessary metadata
 func (self Song) Valid() bool {
 	if self.Artist == "" || self.Album == "" || self.AlbumArtist == "" || self.Title == "" {
 		return false
@@ -21,34 +23,41 @@ func (self Song) Valid() bool {
 	return true
 }
 
-func (self *Song) ScanFromRow(row rowScanner) error {
-	artist := &self.Artist
-	album := &self.Album
-	title := &self.Title
-	albumArtist := &self.AlbumArtist
+// ScanFromRow reads the data from the sql row into a song struct.
+func ScanSongFromRow(row rowScanner) (*song, error) {
+	// Scan requires pointers to variables to write into so define them here.
+	song = new(Song)
+	artist := &song.Artist
+	album := &song.Album
+	title := &song.Title
+	albumArtist := &song.AlbumArtist
 	var id *int = new(int)
-	filepath := &self.Filepath
+	filepath := &song.Filepath
+
+	// Perform the scan
 	err := row.Scan(artist, title, album, albumArtist, filepath, id)
-
 	if err != nil {
-		return err
+		return nil, err
 	}
 
-	self.Artist = *artist
-	self.Title = *title
-	self.Album = *album
-	self.AlbumArtist = *albumArtist
-	self.Filepath = *filepath
-	self.ID = *id
-	if err != nil {
-		self.ID = -1
-		return err
-	}
-	return nil
+	// song.Artist = *artist
+	// song.Title = *title
+	// song.Album = *album
+	// song.AlbumArtist = *albumArtist
+	// song.Filepath = *filepath
+	// song.ID = *id
+	// if err != nil {
+	// 	song.ID = -1
+	// 	return err
+	// }
+
+	return song, nil
 }
 
+// InvalidSong is a Song that implements Error()
 type InvalidSong Song
 
+// Error displays all of the metadata attributes
 func (self InvalidSong) Error() string {
 	return fmt.Sprintf("Invalid song:\nArtist=%s\nTitle=%s\nAlbum=%s\nAlbumArtist=%s", self.Artist, self.Title, self.Album, self.AlbumArtist)
 }

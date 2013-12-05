@@ -1,0 +1,1071 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"co",
+				"columnNames	[]string ν"
+			],
+			[
+				"Chec",
+				"CheckStraight"
+			],
+			[
+				"stra",
+				"straightFlush"
+			],
+			[
+				"tao",
+				"toak2"
+			],
+			[
+				"tak",
+				"toak1"
+			],
+			[
+				"fo",
+				"fourOfAKind"
+			],
+			[
+				"sta",
+				"straightFlush"
+			],
+			[
+				"chec",
+				"CheckFlush"
+			],
+			[
+				"card",
+				"card_values"
+			],
+			[
+				"end",
+				"endPaths"
+			],
+			[
+				"new",
+				"newPaths"
+			],
+			[
+				"ha",
+				"HandleFunc	 ƒ"
+			],
+			[
+				"csv",
+				"csvfile"
+			],
+			[
+				"Print",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"SIG",
+				"SIGKILL	 Ɩ"
+			],
+			[
+				"Printf",
+				"Fprintf	n int, err error ƒ"
+			],
+			[
+				"fini",
+				"finisher	int ν"
+			],
+			[
+				"P",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"SPrin",
+				"Sprintf	string ƒ"
+			],
+			[
+				"Submat",
+				"FindStringSubmatch	[]string ƒ"
+			],
+			[
+				"Han",
+				"HandleFunc	 ƒ"
+			],
+			[
+				"Respo",
+				"ResponseWriter	interface ¡"
+			],
+			[
+				"pr",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"st",
+				"strconv	 package ρ"
+			],
+			[
+				"n",
+				"numBarbers	int ν"
+			],
+			[
+				"D",
+				"Duration	int64 ʈ"
+			],
+			[
+				"Custo",
+				"CustomerReader	struct ʈ"
+			],
+			[
+				"barber",
+				"BarberReader	struct ʈ"
+			],
+			[
+				"Bar",
+				"BarberReader	struct ʈ"
+			],
+			[
+				"Fp",
+				"Fprintf	n int, err error ƒ"
+			],
+			[
+				"cust",
+				"customers	[]*CustomerReader ν"
+			],
+			[
+				"num",
+				"numCustomers	int ν"
+			],
+			[
+				"s",
+				"SWriter	struct ʈ"
+			],
+			[
+				"custo",
+				"customer	*CustomerReader ν"
+			],
+			[
+				"print",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"sp",
+				"Sprintln	string ƒ"
+			],
+			[
+				"customer",
+				"customerCount	 ν"
+			],
+			[
+				"cus",
+				"customersEntered	 ν"
+			],
+			[
+				"in",
+				"Int31n	int32 ƒ"
+			],
+			[
+				"time",
+				"timeWaited	<-chan float ν"
+			],
+			[
+				"Cuso",
+				"CustomerReader	struct ʈ"
+			],
+			[
+				"Barb",
+				"BarberReader	struct ʈ"
+			],
+			[
+				"Barbe",
+				"BarberReader	struct ʈ"
+			],
+			[
+				"done",
+				"doneCutting	chan chan *Person ν"
+			],
+			[
+				"Cus",
+				"Customer	struct ʈ"
+			],
+			[
+				"NewC",
+				"NewCustomerQueue	*CustomerQueue ƒ"
+			],
+			[
+				"sub",
+				"subscriber	Subscriber ν"
+			],
+			[
+				"re",
+				"reverseSubscriber	Subscriber ν"
+			],
+			[
+				"C",
+				"Customer	struct ʈ"
+			],
+			[
+				"NewCu",
+				"NewCustomer	*Customer ƒ"
+			],
+			[
+				"NewCust",
+				"NewCustomerQueue	*CustomerQueue ƒ"
+			],
+			[
+				"Sub",
+				"Subscriber	struct ʈ"
+			],
+			[
+				"subs",
+				"Subscriber	struct ʈ"
+			],
+			[
+				"T",
+				"target	string ν"
+			],
+			[
+				"Res",
+				"BaseResponse	struct ʈ"
+			],
+			[
+				"Even",
+				"EventListener	struct ʈ"
+			],
+			[
+				"Eve",
+				"EventBroadcaster	struct ʈ"
+			],
+			[
+				"event",
+				"EventBroadcaster	chan Event ʈ"
+			],
+			[
+				"subscri",
+				"subscriptions	[]EventBroadcaster ν"
+			],
+			[
+				"Event",
+				"EventBroadcaster	struct ʈ"
+			],
+			[
+				"even",
+				"EventManager	struct ʈ"
+			],
+			[
+				"RunClass",
+				"RunClassHeapTests"
+			],
+			[
+				"bar",
+				"barbershop	*BarberShop ν"
+			],
+			[
+				"cu",
+				"CustomerSitsDown	struct ʈ"
+			],
+			[
+				"y",
+				"y"
+			],
+			[
+				"good",
+				"goodx"
+			],
+			[
+				"Pri",
+				"PriorityQueue"
+			],
+			[
+				"to",
+				"toRemove"
+			],
+			[
+				"B",
+				"BinarySearchTree"
+			],
+			[
+				"del",
+				"delete"
+			],
+			[
+				"dele",
+				"deleteSubtree"
+			],
+			[
+				"capa",
+				"capacity_"
+			],
+			[
+				"Pr",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"Cust",
+				"CustomerStanding	struct ʈ"
+			],
+			[
+				"Cu",
+				"CustomerStanding	struct ʈ"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Gopath/src/github.com/snorwood/mediaparty/query.go",
+			"settings":
+			{
+				"buffer_size": 1652,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "main.go",
+			"settings":
+			{
+				"buffer_size": 1393,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "get-request.go",
+			"settings":
+			{
+				"buffer_size": 316,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Gopath/src/github.com/snorwood/mediaparty/templates.go",
+			"settings":
+			{
+				"buffer_size": 2059,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Gopath/src/github.com/snorwood/mediaparty/song.go",
+			"settings":
+			{
+				"buffer_size": 1512,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"GoSublime: ",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"sublime",
+				"SublimeGit: Documentation"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"packrem",
+				"Package Control: Remove Package"
+			],
+			[
+				"gist",
+				"Gist: Create Public Gist"
+			],
+			[
+				"op",
+				"Gist: Open Gist"
+			],
+			[
+				"gist op",
+				"Gist: Open Gist"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"packremo",
+				"Package Control: Remove Package"
+			],
+			[
+				"parem",
+				"Package Control: Remove Package"
+			],
+			[
+				"pacli",
+				"Package Control: List Packages"
+			],
+			[
+				"packremove",
+				"Package Control: Remove Package"
+			],
+			[
+				"packdi",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"pack in",
+				"Package Control: Install Package"
+			],
+			[
+				"list p",
+				"Package Control: List Packages"
+			],
+			[
+				"pack e",
+				"Package Control: Enable Package"
+			],
+			[
+				"pack dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"soda",
+				"GoSublime: Do a sanity check"
+			],
+			[
+				"pac",
+				"Package Control: Enable Package"
+			],
+			[
+				"package controll",
+				"Package Control: Disable Package"
+			],
+			[
+				"setsyntaxgosu	",
+				"Set Syntax: GoSublime: Go"
+			],
+			[
+				"setsyngo",
+				"Set Syntax: Go"
+			],
+			[
+				"syntax gosublime",
+				"Set Syntax: GoSublime: Go"
+			]
+		],
+		"width": 402.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Gopath/src/github.com/snorwood/mediaparty/main/mediaparty.sublime-project",
+		"/C/Gopath/src/github.com/snorwood/mediaparty/mediaparty_test.go",
+		"/C/Gopath/src/github.com/snorwood/mediaparty/main/get-request.html",
+		"/C/Gopath/src/github.com/snorwood/mediaparty/main/get-request.go",
+		"/C/Gopath/src/github.com/snorwood/mediaparty/main/mediaparty.sublime-workspace",
+		"/C/Users/snorwood/Desktop/euler/poker.txt",
+		"/C/Users/snorwood/Desktop/euler/Euler54.py",
+		"/C/Users/snorwood/Desktop/euler/Euler53.py",
+		"/C/Users/snorwood/Desktop/gtest/l.ear/fold/webtrolly.xml",
+		"/C/Users/snorwood/Desktop/gtest/globtest.py",
+		"/C/Users/snorwood/Desktop/temperature.csv",
+		"/C/Users/snorwood/Desktop/so.py",
+		"/C/Users/snorwood/Desktop/s1.py",
+		"/C/Gopath/src/github.com/snorwood/barbershop/servertest/mp3player.go",
+		"/C/Gopath/src/github.com/snorwood/barbershop/servertest/main.go",
+		"/C/Gopath/src/github.com/snorwood/barbershop/barbershop_test.go",
+		"/C/Gopath/src/github.com/snorwood/barbershop/main/barbershop-test.go",
+		"/C/Gopath/src/github.com/snorwood/barbershop/barbershop.go",
+		"/C/Users/snorwood/Downloads/gist3780989-82fda7160754cedd378af16e44b67856f25afc53.tar/gist3780989-82fda7160754cedd378af16e44b67856f25afc53/gist3780989-82fda7160754cedd378af16e44b67856f25afc53/long_polling.go",
+		"/C/Gopath/src/github.com/snorwood/barbershop/longpolling/main.go",
+		"/C/Users/snorwood/Downloads/gist3780989-82fda7160754cedd378af16e44b67856f25afc53.tar/gist3780989-82fda7160754cedd378af16e44b67856f25afc53/gist3780989-82fda7160754cedd378af16e44b67856f25afc53/test.go",
+		"/C/Gopath/src/github.com/snorwood/barbershop/.gitignore",
+		"/C/Gopath/src/multithreading-practice.go",
+		"/C/Gopath/src/github.com/snorwood/barbershop/servertest/edit.html",
+		"/C/Gopath/src/github.com/snorwood/barbershop/servertest/view.html",
+		"/C/Go/src/pkg/time/time.go",
+		"/C/src/ODI Engine Products - PT Improvements/Applications/DieTrackRTSystem/DieTrackRTSystem.csproj.user",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Gopath/src/github.com/snorwood/barbershop/main/output.txt",
+		"/C/Users/snorwood/Desktop/question1.py",
+		"/C/Users/snorwood/Desktop/test.py",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/User/GitGutter.sublime-settings",
+		"/C/Gopath/src/github.com/snorwood/barbershop/barber.go",
+		"/C/Gopath/src/github.com/snorwood/barbershop/customerqueue.go",
+		"/C/Gopath/src/github.com/snorwood/barbershop/customer.go",
+		"/C/Gopath/src/github.com/snorwood/barbershop/manager.go",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/GoSublime/CHANGELOG.md",
+		"/C/Gopath/src/github.com/snorwood/barbershop/subscription.go",
+		"/C/Gopath/src/github.com/snorwood/barbershop/queue.go",
+		"/C/Gopath/src/github.com/snorwood/barbershop/queue_test.go",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/Color Schemes/sublime-tomorrow-theme/Tomorrow-Night-Eighties.tmTheme",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+		"/C/Gopath/src/github.com/snorwood/barbershop/lineup.go",
+		"/C/Gopath/src/github.com/snorwood/barbershop/barbershop.sublime-project",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/GoSublime/9o.md",
+		"/C/Gopath/src/github.com/snorwood/barbershop/request.go",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/GitGutter/GitGutter.sublime-settings",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/GoSublime/GoSublime.tmLanguage",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/GoSublime/GoSublime-next.tmLanguage",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/GoSublime/syntax/GoSublime-Go.tmLanguage.json",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/User/GoSublime-next.sublime-settings",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/User/GoSublime.sublime-settings",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/Theme - Soda/Soda Light 3.sublime-theme",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/User/GoSublime-aux.sublime-settings",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/Color Schemes/tomorrow-night-edit.tmTheme",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/Theme - Soda/Soda Light/Widget - Soda Light.stTheme",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/GoSublime/doc/autoinst.md",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/GoSublime/GoSublime.py",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/GoSublime/gssynforce.py",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/Theme - Soda/Soda Dark/Widget - Soda Dark 3.sublime-settings",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/Theme - Soda/Soda Dark/Widget - Soda Dark.stTheme",
+		"/C/Gopath/src/github.com/snorwood/barbershop/README.md",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/GoSublime/USAGE.md",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/GoSublime/gosubl/ev.py",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/types/types.go",
+		"/C/Users/snorwood/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_pkgpaths.go",
+		"/C/Program Files/Sublime Text 3/Packages/Theme - Default.sublime-package",
+		"/C/Program Files/Sublime Text 3/Packages/D.sublime-package",
+		"/C/Gopath/src/github.com/snorwood/barbershop/interfaces.go",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com/snorwood/barbershop/barbershop.sublime-project",
+		"/C/Users/Steven Norwood/AppData/Roaming/Sublime Text 3/Packages/GoSublime/GoSublime.sublime-build",
+		"/C/Users/Steven Norwood/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Steven Norwood/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Steven Norwood/AppData/Roaming/Sublime Text 3/Installed Packages/Theme - Soda.sublime-package",
+		"/C/Users/Steven Norwood/AppData/Roaming/Sublime Text 3/Packages/User/bh_core.sublime-settings",
+		"/C/Users/Steven Norwood/AppData/Roaming/Sublime Text 3/Packages/Theme - Soda/Soda Dark 3.sublime-theme",
+		"/C/Users/Steven Norwood/AppData/Roaming/Sublime Text 3/Packages/BracketHighlighter/bh_core.py",
+		"/C/Users/Steven Norwood/Desktop/test.py",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com/snorwood/barbershop/interfaces.go",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com/snorwood/barbershop/README.md",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com/snorwood/barbershop/request.go",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com/snorwood/barbershop/manager.go",
+		"/C/Users/Steven Norwood/Documents/Go/barbershop-test.go",
+		"/C/Users/Steven Norwood/AppData/Roaming/Sublime Text 3/Packages/User/go.sublime-build",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com/snorwood/barbershop/customer.go",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com.snorwood/barbershop/customer.go",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com.snorwood/barbershop/manager.go",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com.snorwood/barbershop/request.go",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com.snorwood/barbershop/README.md",
+		"/C/Users/Steven Norwood/Documents/Go/test.go",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com.snorwood/barbershop/barbershop.go",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com.snorwood/barbershop/eventmanager.go",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com.snorwood/barbershop/event.go",
+		"/C/Users/Steven Norwood/Documents/University/Spring 2013/Barbershop/main.go",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com.snorwood/barbershop/eventlistener.go",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com.snorwood/barbershop/eventbroadcaster.go",
+		"/E/Users/Steven/Documents/University/Spring 2013/Machine Learning/PocketAlgorithm.py",
+		"/E/Users/Steven/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 3 - Cary/main.cpp",
+		"/E/Users/Steven/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 3 - Cary/PriorityQueue.hpp",
+		"/E/Users/Steven/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 3/PriorityQueue.cpp",
+		"/E/Users/Steven/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 3 - Cary/PriorityQueue.cpp",
+		"/E/Users/Steven/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 3/BinarySearchTree.cpp",
+		"/C/Users/Steven Norwood/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 2/main.cpp",
+		"/E/Users/Steven/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 3/main.cpp",
+		"/E/Users/Steven/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 3/PriorityQueue.hpp",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com.snorwood/barbershop/state.go",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com.snorwood/barbershop/barber.go",
+		"/E/Users/Steven/Documents/University/Spring 2013/Barbershop/barbershoptest.go",
+		"/E/Users/Steven/Documents/University/Spring 2013/Barbershop/barbertest.go",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com.snorwood/barbershop/test.go",
+		"/C/Users/Steven Norwood/AppData/Roaming/Sublime Text 3/Packages/GoSublime/CHANGELOG.md",
+		"/E/Users/Steven/Documents/University/Spring 2013/Barbershop/main.go",
+		"/C/Users/Steven Norwood/Documents/Go/src/github.com.snorwood/barbershop/queue.go",
+		"/E/Users/Steven/Documents/University/Spring 2013/Machine Learning/pla.py",
+		"/E/Users/Steven/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 3/BinarySearchTree.hpp",
+		"/E/Users/Steven/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 3/Lab3Tests.hpp",
+		"/E/Users/Steven/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 1/DoublyLinkedList.cpp",
+		"/E/Users/Steven/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 3/mainbst.cpp",
+		"/E/Users/Steven/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 3/mainheap.cpp",
+		"/C/Users/Steven Norwood/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 3/main.cpp",
+		"/C/Users/Steven Norwood/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 3/PriorityQueue.hpp",
+		"/C/Users/Steven Norwood/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 3/maintest.cpp",
+		"/C/Users/Steven Norwood/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 3/PriorityQueue.cpp",
+		"/C/Users/Steven Norwood/Documents/University/Spring 2013/Data Structures and Algorithms/Lab 2/DynamicStack.cpp",
+		"/C/Users/Steven Norwood/Desktop/googlebutton.html"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"self",
+			"CheckFlush",
+			"&&",
+			"!=",
+			"t",
+			"royalFlush",
+			"cards",
+			"min",
+			"1",
+			"0",
+			"10",
+			"k",
+			"currentPath",
+			"x",
+			"mp3",
+			"\"",
+			"name",
+			"handler",
+			"ithdraw",
+			"end",
+			"Deposit",
+			"deposit",
+			"messages",
+			"self",
+			"MakeLPHandler",
+			"...)",
+			"\", ",
+			"8080",
+			"milliSeconds",
+			"seconds",
+			"i",
+			"HelloWorld",
+			"Second",
+			"seconds",
+			"wait",
+			"http.HandleFunc(\"/view/\", viewHandler)",
+			"stopped",
+			"customerCount",
+			"updatedustomers",
+			"customerCount",
+			"float32",
+			"barber",
+			"Zero",
+			"Println",
+			"end",
+			"End",
+			"numBarbers",
+			"string",
+			"newCustomer",
+			":",
+			"Duration",
+			"liger",
+			"barber",
+			"Barber",
+			"barber",
+			"Barber",
+			"barber",
+			"Barber",
+			"barber",
+			"Barber",
+			"barber",
+			"ID",
+			"id",
+			"ID",
+			"id",
+			"people",
+			"person",
+			"setBusy",
+			"getBusy",
+			"person",
+			"Person",
+			"(int)",
+			"TagTestSettings",
+			"Customer",
+			"}\n",
+			"channel",
+			"10",
+			"time.After(10*time.Second",
+			"default",
+			"-",
+			"customer",
+			"Customer",
+			"customer",
+			"customerQueue",
+			"CustomerQueue",
+			"customerQueue",
+			"Customer",
+			"customer",
+			"param",
+			"res",
+			"param",
+			"function",
+			"parame",
+			"var",
+			"variable",
+			"function",
+			"func",
+			"param",
+			"type",
+			"struct",
+			"variable",
+			"var",
+			"type",
+			"zoom",
+			"font",
+			"Dark",
+			"outline",
+			"style",
+			"Response",
+			"string",
+			"barber",
+			"Positive",
+			"Value",
+			"value",
+			"Value",
+			"input",
+			"request",
+			"Request",
+			"request",
+			"betterstring",
+			"string",
+			"interface",
+			"{}",
+			"interface",
+			"interface{}",
+			"string",
+			"k",
+			"string"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"Response"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Gopath/src/github.com/snorwood/mediaparty/query.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1652,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								177,
+								177
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1393,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								804,
+								804
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "get-request.go",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 316,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Gopath/src/github.com/snorwood/mediaparty/templates.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2059,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2056,
+								2056
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 840.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Gopath/src/github.com/snorwood/mediaparty/song.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1512,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1329,
+								1329
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o://C:\\Gopath\\src\\github.com\\snorwood\\barbershop":
+	{
+		"height": 335.0
+	},
+	"output.9o://C:\\Gopath\\src\\github.com\\snorwood\\barbershop\\longpolling":
+	{
+		"height": 132.0
+	},
+	"output.9o://C:\\Gopath\\src\\github.com\\snorwood\\barbershop\\main":
+	{
+		"height": 132.0
+	},
+	"output.9o://C:\\Gopath\\src\\github.com\\snorwood\\barbershop\\servertest":
+	{
+		"height": 132.0
+	},
+	"output.9o://C:\\Users\\Steven Norwood\\Documents\\Go":
+	{
+		"height": 124.0
+	},
+	"output.9o://C:\\Users\\Steven Norwood\\Documents\\University\\Spring 2013\\Barbershop":
+	{
+		"height": 124.0
+	},
+	"output.9o://C:\\Users\\snorwood\\Desktop":
+	{
+		"height": 132.0
+	},
+	"output.GoSublime-main-output":
+	{
+		"height": 124.0
+	},
+	"output.GoSublime-output":
+	{
+		"height": 124.0
+	},
+	"output.GsDoc-output-output":
+	{
+		"height": 132.0
+	},
+	"output.exec":
+	{
+		"height": 288.0
+	},
+	"output.git-pull":
+	{
+		"height": 132.0
+	},
+	"project": "mediaparty.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"bar",
+				"main\\barbershop-test.go"
+			],
+			[
+				"que",
+				"Documentation\\queue.go"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"print",
+				"print"
+			]
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		]
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 176.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
