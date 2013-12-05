@@ -4,20 +4,6 @@ import (
 	"testing"
 )
 
-func TestSongQueryGetQuery(t *testing.T) {
-	songQuery := SongQuery{
-		Title:       "Let Her Go",
-		Artist:      "Kygo",
-		Album:       "MrSuicideSheep",
-		AlbumArtist: "MrSuicideSheep",
-	}
-	actual := songQuery.GetWhere()
-	expected := "WHERE TITLE = Let Her Go AND Album = MrSuicideSheep AND (Artist = Kygo OR AlbumArtist = MrSuicideSheep)"
-	if actual != expected {
-		t.Errorf("actual: %s did not match expected: %s", actual, expected)
-	}
-}
-
 func TestStringToPostgresString(t *testing.T) {
 	testStrings := map[string]string{
 		"'":            "\\'",
@@ -63,5 +49,14 @@ func TestExecuteTemplate(t *testing.T) {
 	t.Log(result)
 	if err != nil {
 		t.Errorf("Error parsing template: %s", err)
+	}
+}
+
+func TestGetSongQuery(t *testing.T) {
+	query, err := GetSongQuery("musicplayer", "music", "The National", "Fake Empire", "The Boxer", "The National")
+	t.Log(query)
+
+	if err != nil {
+		t.Errorf(err.Error())
 	}
 }

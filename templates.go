@@ -15,11 +15,38 @@ func (self *writableString) Reset() {
 	*self = ""
 }
 
-var SelectColumnsTemplate string = `
+type templateDefinition string
+
+var SelectColumnsTemplate templateDefinition = `
 	Select {{parseColumns .Columns}}
 	`
 
-func ParseColumns(columns []string) string {
+var FromTableTemplate templateDefinition = `
+	FROM {{.Schema}}.{{.Table}}
+	`
+
+var SongWhereTemplate templateDefinition = `
+	Where
+		LOWER("Artist") = LOWER('{{.Artist}}') AND
+		LOWER("Title")  = LOWER('{{.Title}}') AND
+		LOWER("Album")  = LOWER('{{.Album}}')
+	`
+var funcMap template.FuncMap = template.FuncMap{
+	"parseColumns": parseColumns,
+}
+
+func ExecuteTemplate(templateString templateDefinition, object interface{}) (string, error) {
+	temp := template.Must(template.New("temp").Funcs(funcMap).Parse(string(templateString)))
+	resultReader := new(writableString)
+	err := temp.Execute(resultReader, object)
+	if err != nil {
+		return "", nil
+	}
+
+	return string(*resultReader), nil
+}
+
+func parseColumns(columns []string) string {
 	if len(columns) == 0 {
 		return "*"
 	}
@@ -29,30 +56,4 @@ func ParseColumns(columns []string) string {
 		parsedString += ", " + columns[i]
 	}
 	return parsedString
-}
-
-var funcMap template.FuncMap = template.FuncMap{
-	"parseColumns": ParseColumns,
-}
-
-var FromTableTemplate string = `
-	FROM {{.Schema}}.{{.Table}}
-	`
-
-var SongWhereTemplate string = `
-	Where
-		LOWER(Artist) = LOWER({{.Artist}}) AND
-		LOWER(Title)  = LOWER({{.Title}}) AND
-		LOWER(Album)  = LOWER({{.Album}})
-	`
-
-func ExecuteTemplate(templateDefinition string, object interface{}) (string, error) {
-	temp := template.Must(template.New("temp").Funcs(funcMap).Parse(templateDefinition))
-	resultReader := new(writableString)
-	err := temp.Execute(resultReader, object)
-	if err != nil {
-		return "", nil
-	}
-
-	return string(*resultReader), nil
 }
