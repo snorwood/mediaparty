@@ -45,8 +45,8 @@ func handle(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, `
 		<body>
 			<audio controls>
-  				<source src="/music/StudioEIM/The Third Flight/MapleStory/Wizet" type="audio/mpeg">
-  				<embed height="50" width="100" src="/music/StudioEIM/The Third Flight/MapleStory/Wize">
+				<source src="/music/StudioEIM/The Third Flight/MapleStory/Wizet" type="audio/mpeg">
+				<embed height="50" width="100" src="/music/StudioEIM/The Third Flight/MapleStory/Wize">
 			</audio>
 		</body>
 	`)
