@@ -315,7 +315,7 @@
 			"file": "get-request.go",
 			"settings":
 			{
-				"buffer_size": 717,
+				"buffer_size": 578,
 				"line_ending": "Windows"
 			}
 		},
@@ -323,7 +323,7 @@
 			"file": "request.html",
 			"settings":
 			{
-				"buffer_size": 652,
+				"buffer_size": 444,
 				"line_ending": "Windows"
 			}
 		},
@@ -331,7 +331,7 @@
 			"file": "test.html",
 			"settings":
 			{
-				"buffer_size": 215,
+				"buffer_size": 26,
 				"line_ending": "Windows"
 			}
 		}
@@ -339,9 +339,13 @@
 	"build_system": "Packages/Python/Python.sublime-build",
 	"command_palette":
 	{
-		"height": 375.0,
+		"height": 60.0,
 		"selected_items":
 		[
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
 			[
 				"GoSublime: ",
 				"GoSublime: Add/Remove package"
@@ -455,7 +459,7 @@
 				"Set Syntax: GoSublime: Go"
 			]
 		],
-		"width": 402.0
+		"width": 498.0
 	},
 	"console":
 	{
@@ -777,15 +781,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 717,
+						"buffer_size": 578,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								323,
-								323
+								304,
+								304
 							]
 						],
 						"settings":
@@ -805,15 +809,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 652,
+						"buffer_size": 444,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								38,
-								38
+								427,
+								427
 							]
 						],
 						"settings":
@@ -834,20 +838,20 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 215,
+						"buffer_size": 26,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								215,
+								26,
 								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
