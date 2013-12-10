@@ -315,7 +315,23 @@
 			"file": "get-request.go",
 			"settings":
 			{
-				"buffer_size": 578,
+				"buffer_size": 811,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Gopath/src/github.com/snorwood/mediaparty/query.go",
+			"settings":
+			{
+				"buffer_size": 1676,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Gopath/src/github.com/snorwood/mediaparty/song.go",
+			"settings":
+			{
+				"buffer_size": 1513,
 				"line_ending": "Windows"
 			}
 		},
@@ -323,7 +339,7 @@
 			"file": "request.html",
 			"settings":
 			{
-				"buffer_size": 444,
+				"buffer_size": 578,
 				"line_ending": "Windows"
 			}
 		},
@@ -772,7 +788,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -781,15 +797,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 578,
+						"buffer_size": 811,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								304,
-								304
+								256,
+								256
 							]
 						],
 						"settings":
@@ -805,19 +821,75 @@
 				},
 				{
 					"buffer": 1,
-					"file": "request.html",
+					"file": "/C/Gopath/src/github.com/snorwood/mediaparty/query.go",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 444,
+						"buffer_size": 1676,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								427,
-								427
+								656,
+								656
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Gopath/src/github.com/snorwood/mediaparty/song.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1513,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "request.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								310,
+								310
 							]
 						],
 						"settings":
@@ -833,7 +905,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "test.html",
 					"semi_transient": false,
 					"settings":

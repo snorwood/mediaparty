@@ -22,8 +22,8 @@ func GetSongQuery(songTable Table, columnNames []string, song Song) (string, err
 		return "", InvalidSong(song)
 	}
 
-	if songTable.Schema == "" || songTable.Tableable == "" {
-		return "", fmt.Errorf("Invalid Table:\nschema=%s\ntable=%s", schema, table)
+	if songTable.Schema == "" || songTable.TableName == "" {
+		return "", fmt.Errorf("Invalid Table:\nschema=%s\ntable=%s", songTable.Schema, songTable.TableName)
 	}
 
 	columns := struct {

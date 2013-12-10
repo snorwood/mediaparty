@@ -24,9 +24,9 @@ func (self Song) Valid() bool {
 }
 
 // ScanFromRow reads the data from the sql row into a song struct.
-func ScanSongFromRow(row rowScanner) (*song, error) {
+func ScanSongFromRow(row rowScanner) (*Song, error) {
 	// Scan requires pointers to variables to write into so define them here.
-	song = new(Song)
+	song := new(Song)
 	artist := &song.Artist
 	album := &song.Album
 	title := &song.Title

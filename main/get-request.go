@@ -1,7 +1,9 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+	"github.com/snorwood/mediaparty"
 	"net/http"
 )
 
@@ -11,7 +13,14 @@ func mp3Handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func musicHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, `{\"artist\": \"MOOOOO\"}`)
+	song := mediaparty.Song{
+		Artist:      "The Black Keys",
+		Title:       "Money Maker",
+		Album:       "El Camino",
+		AlbumArtist: "The Black Keys",
+	}
+	jsonString, _ := json.Marshal(song)
+	fmt.Fprint(w, string(jsonString))
 }
 
 func rootHandler(w http.ResponseWriter, r *http.Request) {

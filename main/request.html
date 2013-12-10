@@ -5,18 +5,25 @@
 </script>
 <script>
 $(document).ready(function(){
-  $("#btn").click(function(){
-    $.get("/music/",function(data,status){
-      var json = $.parseJSON("{artist: moo}");
-      alert("Data: " + data + "\nStatus: " + status);
+  $("button").click(function(){
+    $.get("/music/",function(result, success){
+      var obj = $.parseJSON( result );
+      $("#artist").attr("text", obj.Artist);
     });
   });
 });
 </script>
 </head>
-
 <body>
-<p id="test"></p>
-<button id="btn">This is a button</button>
+
+<button>Get JSON Data</button>
+<div>
+  <form>
+    Title: <input type="text" name="title"><br>
+    Artist:  <input type="text" name="artist"><br>
+    Album: <input type="text" id="album">
+  </form> 
+</div>
+
 </body>
 </html>
