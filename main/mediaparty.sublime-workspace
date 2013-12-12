@@ -315,7 +315,7 @@
 			"file": "get-request.go",
 			"settings":
 			{
-				"buffer_size": 811,
+				"buffer_size": 894,
 				"line_ending": "Windows"
 			}
 		},
@@ -328,18 +328,18 @@
 			}
 		},
 		{
-			"file": "/C/Gopath/src/github.com/snorwood/mediaparty/song.go",
+			"file": "request.html",
 			"settings":
 			{
-				"buffer_size": 1513,
+				"buffer_size": 1173,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "request.html",
+			"file": "/C/Gopath/src/github.com/snorwood/mediaparty/song.go",
 			"settings":
 			{
-				"buffer_size": 578,
+				"buffer_size": 1513,
 				"line_ending": "Windows"
 			}
 		},
@@ -641,6 +641,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\",
+			"'",
+			"p",
 			"handler",
 			"self",
 			"CheckFlush",
@@ -765,10 +768,7 @@
 			"string",
 			"interface",
 			"{}",
-			"interface",
-			"interface{}",
-			"string",
-			"k"
+			"interface"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -788,7 +788,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -797,15 +797,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 811,
+						"buffer_size": 894,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								256,
-								256
+								548,
+								548
 							]
 						],
 						"settings":
@@ -842,13 +842,42 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 240.0,
+						"translation.y": 180.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "request.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								897,
+								897
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "/C/Gopath/src/github.com/snorwood/mediaparty/song.go",
 					"semi_transient": false,
 					"settings":
@@ -870,36 +899,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "request.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 578,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								310,
-								310
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -13,11 +13,17 @@ func mp3Handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func musicHandler(w http.ResponseWriter, r *http.Request) {
-	song := mediaparty.Song{
-		Artist:      "The Black Keys",
-		Title:       "Money Maker",
-		Album:       "El Camino",
-		AlbumArtist: "The Black Keys",
+	song := struct {
+		mediaparty.Song
+		Source string
+	}{
+		Song: mediaparty.Song{
+			Artist:      "The Black Keys",
+			Title:       "Money Maker",
+			Album:       "El Camino",
+			AlbumArtist: "The Black Keys",
+		},
+		Source: "/mp3/",
 	}
 	jsonString, _ := json.Marshal(song)
 	fmt.Fprint(w, string(jsonString))
