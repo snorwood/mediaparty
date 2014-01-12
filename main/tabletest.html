@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+			window.onload = function () { 
+				var headers = new Array("Title", "Artist", "Album")
+				var table = document.getElementById("musictable");
+				var header = table.createTHead();
+				var row = table.insertRow(0);
+				var index = 0;
+				
+				for (headerTitle in headers) 
+				{
+					var cell = row.insertCell(index);
+					cell.innerHTML = headers[index].bold()
+					index++;
+				}
+				alert(httpGet("/query"))	
+			}
+			
+			function httpGet(theUrl)
+			{
+			    var xmlHttp = null;
+
+			    xmlHttp = new XMLHttpRequest();
+			    xmlHttp.open( "GET", theUrl, false );
+			    xmlHttp.send( null );
+			    return xmlHttp.responseText;
+			}
+		</script>
+		<table id="musictable" border="1">
+		</table>	
+	</body>
+</html>
