@@ -1,0 +1,38 @@
+{
+	"build_systems":
+	[
+		{
+			"name": "List",
+			"shell_cmd": "ls -l"
+		}
+	],
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Gopath\\src\\github.com\\snorwood\\mediaparty\\main"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.sublime-project",
+			],
+			"folder_exclude_patterns":
+			[
+				"main",
+				"tests"
+			],
+			"follow_symlinks": true,
+			"name": "src",
+			"path": "C:\\Gopath\\src\\github.com\\snorwood\\mediaparty"
+		},
+		{
+			"name": "tests",
+			"path": "C:\\Gopath\\src\\github.com\\snorwood\\mediaparty\\tests"
+		}
+	],
+	"settings":
+	{
+		"tab_size": 8
+	}
+}

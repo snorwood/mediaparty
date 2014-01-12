@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'>
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("/music/",function(result, success){
+      var obj = $.parseJSON( result );
+      $("#title").text(obj.Title);
+      $("#artist").text(obj.Artist);
+      $("#album").text(obj.Album);
+      $("#metadata").show();
+      // $("body").append(obj.MediaFile);
+      var player = document.createElement('audio');
+      player.setAttribute('controls', 'controls');
+      var firefox = document.createElement('source');
+      firefox.setAttribute('src', obj.Source);
+      firefox.setAttribute('type', 'audio/mpeg');
+      // player.setAttribute('autoplay', 'autoplay');
+      player.appendChild(firefox);
+      // player.append("Browser doesn't support that");
+      $("body").append(player);
+
+      player.play();
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Get JSON Data</button>
+<div id="metadata" style="display: none;">
+  <b>Title:</b> <span id="title"></span><br>
+  <b>Artist:</b>  <span id="artist"></span><br>
+  <b>Album:</b> <span id="album"></span>
+</div>
+</body>
+</html>
