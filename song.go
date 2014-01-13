@@ -40,17 +40,6 @@ func ScanSongFromRow(row rowScanner) (*Song, error) {
 		return nil, err
 	}
 
-	// song.Artist = *artist
-	// song.Title = *title
-	// song.Album = *album
-	// song.AlbumArtist = *albumArtist
-	// song.Filepath = *filepath
-	// song.ID = *id
-	// if err != nil {
-	// 	song.ID = -1
-	// 	return err
-	// }
-
 	return song, nil
 }
 

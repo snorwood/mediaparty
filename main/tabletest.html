@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<body>
-		<script>
+		<script type="text/javascript">
 			window.onload = function () { 
-				var headers = new Array("Title", "Artist", "Album")
+				var headers = new Array("Artist", "Album", "Title")
 				var table = document.getElementById("musictable");
 				var header = table.createTHead();
 				var row = table.insertRow(0);
@@ -12,10 +12,29 @@
 				for (headerTitle in headers) 
 				{
 					var cell = row.insertCell(index);
-					cell.innerHTML = headers[index].bold()
+					cell.innerHTML = headers[index].bold();
 					index++;
 				}
-				alert(httpGet("/query"))	
+				
+				var songList = JSON.parse(httpGet("/query/Twice As Nice"));
+				// alert(JSON.stringify(songList))
+				for (song in songList)
+				{
+					song = songList[0]
+					var rowIndex = 1;
+					var songRow = table.insertRow(rowIndex);
+					
+					var valueCell = songRow.insertCell(0);
+					valueCell.innerHTML = song.Artist;
+					
+					valueCell = songRow.insertCell(1);
+					valueCell.innerHTML = song.Album;
+					
+					valueCell = songRow.insertCell(2);
+					valueCell.innerHTML = song.Title;
+					
+					rowIndex++;
+				}
 			}
 			
 			function httpGet(theUrl)
@@ -25,7 +44,7 @@
 			    xmlHttp = new XMLHttpRequest();
 			    xmlHttp.open( "GET", theUrl, false );
 			    xmlHttp.send( null );
-			    return xmlHttp.responseText;
+			    return String(xmlHttp.responseText);
 			}
 		</script>
 		<table id="musictable" border="1">

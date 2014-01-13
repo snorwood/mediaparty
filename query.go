@@ -94,19 +94,19 @@ func VariableSongQuery(schema, table string, song Song) (string, error) {
 		return query, err
 	}
 
-	query += formatColumn("Artist") + " = " + formatValue(song.Artist)
+	query += "LOWER(" + formatColumn("Artist") + ") = LOWER(" + formatValue(song.Artist) + ")"
 
 	if song.Album == "" {
 		return query, err
 	}
 
-	query += " AND " + formatColumn("Album") + " = " + formatValue(song.Album)
+	query += "LOWER(" + formatColumn("Album") + ") = LOWER(" + formatValue(song.Album) + ")"
 
 	if song.Title == "" {
 		return query, err
 	}
 
-	query += " AND " + formatColumn("Title") + " = " + formatValue(song.Title)
+	query += "LOWER(" + formatColumn("Title") + ") = LOWER(" + formatValue(song.Title) + ")"
 
 	return query, err
 }

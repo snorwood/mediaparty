@@ -42,8 +42,7 @@ func mp3Handler(w http.ResponseWriter, r *http.Request) {
 
 		// Retrieve the song from the database.
 		songRow := db.QueryRow(query)
-		song := new(mediaparty.Song)
-		scanErr := song.ScanFromRow(songRow)
+		song, scanErr := mediaparty.ScanSongFromRow(songRow)
 		if scanErr != nil {
 			log.Fatalf("Error scanning row: %s", scanErr)
 		}
@@ -121,11 +120,9 @@ func queryHandler(w http.ResponseWriter, r *http.Request) {
 	if dbErr != nil {
 		log.Fatalf("Invalid response from database: %s \n Query: %s", dbErr, query)
 	}
-
 	songs := make([]*mediaparty.Song, 0)
 	for songRows.Next() {
-		song := new(mediaparty.Song)
-		scanErr := song.ScanFromRow(songRows)
+		song, scanErr := mediaparty.ScanSongFromRow(songRows)
 
 		// Security measure. Don't want this being sent out.
 		song.Filepath = ""
@@ -136,6 +133,7 @@ func queryHandler(w http.ResponseWriter, r *http.Request) {
 			songs = append(songs, song)
 		}
 	}
+	fmt.Println(query, songs)
 
 	// Convert song list to json
 	responseBytes, jsonErr := json.Marshal(songs)
