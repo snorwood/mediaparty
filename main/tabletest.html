@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+	<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+	</script>
+	</head> 
 	<body>
 		<script type="text/javascript">
 			window.onload = function () { 
@@ -15,13 +19,19 @@
 					cell.innerHTML = headers[index].bold();
 					index++;
 				}
-				
+
+				document.body.appendChild(newSearchForm(loadSongs))
+			}
+			
+			function loadSongs() {
+				var table = document.getElementById("musictable");
+				var json = httpGet("/query/Twice As Nice");
 				var songList = JSON.parse(httpGet("/query/Twice As Nice"));
-				// alert(JSON.stringify(songList))
-				for (song in songList)
+				
+				for (var song in songList)
 				{
-					song = songList[0]
-					var rowIndex = 1;
+					song = songList[song]
+					var rowIndex = table.rows.length;
 					var songRow = table.insertRow(rowIndex);
 					
 					var valueCell = songRow.insertCell(0);
@@ -37,14 +47,38 @@
 				}
 			}
 			
+			function formSongGet(song)
+			{
+				return "/" + query + "/" + song.Artist
+			}
+			
 			function httpGet(theUrl)
 			{
 			    var xmlHttp = null;
 
-			    xmlHttp = new XMLHttpRequest();
+			    xmlHttp = new XMLHttpRequest();0
 			    xmlHttp.open( "GET", theUrl, false );
 			    xmlHttp.send( null );
 			    return String(xmlHttp.responseText);
+			}
+			
+			function newSearchForm(submitCallback)
+			{
+				var searchMenu = document.createElement("span");
+				titleSearch = document.createElement("input");
+				artistSearch = document.createElement("input");
+				albumSearch = document.createElement("input")
+				
+				submitButton = document.createElement("button");
+				submitButton.onclick = function () { submitCallback();};
+				submitButton.innerHTML = "Search"
+				submitButton.id = "1"
+				searchMenu.appendChild(submitButton)
+				searchMenu.appendChild(titleSearch)
+				searchMenu.appendChild(artistSearch)
+				searchMenu.appendChild(albumSearch)
+				
+				return searchMenu
 			}
 		</script>
 		<table id="musictable" border="1">
