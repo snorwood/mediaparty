@@ -23,33 +23,50 @@
 				document.body.appendChild(newSearchForm(loadSongs))
 			}
 			
-			function loadSongs() {
+			function loadSongs(song) {
 				var table = document.getElementById("musictable");
-				var json = httpGet("/query/Twice As Nice");
-				var songList = JSON.parse(httpGet("/query/Twice As Nice"));
+				var json = formSongGet(song);
 				
-				for (var song in songList)
-				{
-					song = songList[song]
-					var rowIndex = table.rows.length;
-					var songRow = table.insertRow(rowIndex);
+				try 
+				{				
+					var songList = JSON.parse(httpGet(json));
 					
-					var valueCell = songRow.insertCell(0);
-					valueCell.innerHTML = song.Artist;
-					
-					valueCell = songRow.insertCell(1);
-					valueCell.innerHTML = song.Album;
-					
-					valueCell = songRow.insertCell(2);
-					valueCell.innerHTML = song.Title;
-					
-					rowIndex++;
+					for (var song in songList)
+					{
+						song = songList[song]
+						var rowIndex = table.rows.length;
+						var songRow = table.insertRow(rowIndex);
+						
+						var valueCell = songRow.insertCell(0);
+						valueCell.innerHTML = song.Artist;
+						
+						valueCell = songRow.insertCell(1);
+						valueCell.innerHTML = song.Album;
+						
+						valueCell = songRow.insertCell(2);
+						valueCell.innerHTML = song.Title;
+						
+						rowIndex++;
+					}
 				}
+				catch(err)
+				{}
 			}
 			
 			function formSongGet(song)
 			{
-				return "/" + query + "/" + song.Artist
+				var query = "/query/test?";
+
+				for (key in song)
+				{
+					if (song[key] != "")
+					{
+						query += key + "=" + song[key];
+						query += "&";
+					}
+				}
+				
+				return query
 			}
 			
 			function httpGet(theUrl)
@@ -70,7 +87,17 @@
 				albumSearch = document.createElement("input")
 				
 				submitButton = document.createElement("button");
-				submitButton.onclick = function () { submitCallback();};
+				submitButton.onclick = function () 
+					{ 
+						submitCallback(
+							{
+								Title : titleSearch.value,
+								Artist : artistSearch.value,
+								Album : albumSearch.value,
+							}
+						);
+					};
+					
 				submitButton.innerHTML = "Search"
 				submitButton.id = "1"
 				searchMenu.appendChild(submitButton)

@@ -88,25 +88,29 @@ func VariableSongQuery(schema, table string, song Song) (string, error) {
 	query += querySegment
 
 	// Add filter data Artist -> Album -> Title
-	query += "WHERE "
+	query += "WHERE"
 
-	if song.Artist == "" {
-		return query, err
+	filters := make([]string, 0)
+
+	if song.Artist != "" {
+		filters = append(filters, "LOWER("+formatColumn("Artist")+") = LOWER("+formatValue(song.Artist)+")")
 	}
 
-	query += "LOWER(" + formatColumn("Artist") + ") = LOWER(" + formatValue(song.Artist) + ")"
-
-	if song.Album == "" {
-		return query, err
+	if song.Album != "" {
+		filters = append(filters, "LOWER("+formatColumn("Album")+") = LOWER("+formatValue(song.Album)+")")
 	}
 
-	query += "LOWER(" + formatColumn("Album") + ") = LOWER(" + formatValue(song.Album) + ")"
-
-	if song.Title == "" {
-		return query, err
+	if song.Title != "" {
+		filters = append(filters, "LOWER("+formatColumn("Title")+") = LOWER("+formatValue(song.Title)+")")
 	}
 
-	query += "LOWER(" + formatColumn("Title") + ") = LOWER(" + formatValue(song.Title) + ")"
+	if len(filters) == 0 {
+		return "", fmt.Errorf("No filters given: %+v", song)
+	}
+
+	for _, filter := range filters {
+		query += " " + filter
+	}
 
 	return query, err
 }
