@@ -2,6 +2,7 @@ package mediaparty
 
 import (
 	"fmt"
+	"strconv"
 )
 
 // rowScanner encompasses all row objects with scan functionality
@@ -13,6 +14,40 @@ type rowScanner interface {
 type Table struct {
 	Schema string
 	Table  string
+}
+
+func GetSongByID(schema, table string, id int) (string, error) {
+	// Build and verify the table
+	songTable := Table{
+		Schema: schema,
+		Table:  table,
+	}
+	if schema == "" || table == "" {
+		return "", fmt.Errorf("Invalid Table:\nschema=%s\ntable=%s", schema, table)
+	}
+
+	// Build the column list
+	columns := struct {
+		Columns []string
+	}{
+		Columns: []string{},
+	}
+
+	// Build the query up
+	querySegment := ""
+	var err error = nil
+
+	query := ""
+
+	querySegment, err = ExecuteTemplate(SelectColumnsTemplate, columns)
+	query += querySegment
+	querySegment, err = ExecuteTemplate(FromTableTemplate, songTable)
+	query += querySegment
+
+	// Add filter for id
+	query += "WHERE " + formatColumn("ID") + " = " + strconv.Itoa(id)
+
+	return query, err
 }
 
 // GetSongQuery builds the query for a single song

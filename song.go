@@ -31,11 +31,11 @@ func ScanSongFromRow(row rowScanner) (*Song, error) {
 	album := &song.Album
 	title := &song.Title
 	albumArtist := &song.AlbumArtist
-	var id *int = new(int)
+	var id *int = &song.ID
 	filepath := &song.Filepath
 
 	// Perform the scan
-	err := row.Scan(artist, title, album, albumArtist, filepath, id)
+	err := row.Scan(id, artist, title, album, albumArtist, filepath)
 	if err != nil {
 		return nil, err
 	}

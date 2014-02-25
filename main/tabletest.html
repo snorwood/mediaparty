@@ -20,13 +20,18 @@
 					index++;
 				}
 
-				document.body.appendChild(newSearchForm(loadSongs))
+				document.body.insertBefore(newSearchForm(loadSongs), document.body.childNodes[0])
 			}
 			
 			function loadSongs(song) {
 				var table = document.getElementById("musictable");
 				var json = formSongGet(song);
 				
+				while(table.rows.length > 1)
+				{
+					table.rows[1].remove();
+				}	
+
 				try 
 				{				
 					var songList = JSON.parse(httpGet(json));
@@ -36,8 +41,8 @@
 						song = songList[song]
 						var rowIndex = table.rows.length;
 						var songRow = table.insertRow(rowIndex);
-						
 						var valueCell = songRow.insertCell(0);
+
 						valueCell.innerHTML = song.Artist;
 						
 						valueCell = songRow.insertCell(1);
@@ -46,6 +51,9 @@
 						valueCell = songRow.insertCell(2);
 						valueCell.innerHTML = song.Title;
 						
+						// Create event
+						songRow.onclick = function() {loadSongIntoPlayer(song.ID)};
+
 						rowIndex++;
 					}
 				}
@@ -107,8 +115,16 @@
 				
 				return searchMenu
 			}
+
+			function loadSongIntoPlayer(songID) {
+				var musicplayer = document.getElementById("musicplayer");
+				musicplayer.src = '/music/?id=1';
+				alert(musicplayer.src)
+			}
 		</script>
-		<table id="musictable" border="1">
-		</table>	
+		<audio id="musicplayer"  controls autoplay>
+			<source src="/music/?id=2" type="audio/ogg">
+		</audio>
+		<table id="musictable" border="1"></table>
 	</body>
 </html>

@@ -7,6 +7,7 @@ import (
 	_ "github.com/lib/pq"
 	"log"
 	"net/http"
+	"strconv"
 	"strings"
 )
 
@@ -14,7 +15,7 @@ import (
 func Mp3Handler(w http.ResponseWriter, r *http.Request) {
 	// Connect to database -Move to function or outside requests?
 	db, dberr := sql.Open("postgres",
-		"user=postgres password=9K2Po2Tg4Es dbname=musicplayer sslmode=disable port=5432")
+		"user=postgres password=9K2Po2Tg4Es dbname=mediaplayer sslmode=disable port=5432")
 
 	defer db.Close()
 
@@ -24,6 +25,23 @@ func Mp3Handler(w http.ResponseWriter, r *http.Request) {
 
 	// Parse the path
 	path := strings.Split(r.URL.Path, "/")
+	urlValues := r.URL.Query()
+	query := ""
+	err := fmt.Errorf("")
+
+	if urlValues.Get("id") != "" && urlValues.Get("type") != "" {
+		id, convErr := strconv.Atoi(urlValues.Get("id"))
+		contentType := urlValues.Get("type")
+		if convErr != nil {
+			log.Fatalf("Could not convert id to integer %s", convErr)
+		}
+
+		query, err = GetSongByID("mediaplayer", "files", id)
+
+		if err != nil {
+			log.Fatalf("Error getting query: %s", err)
+		}
+	}
 
 	if len(path) >= 6 {
 		songInfo := Song{
@@ -34,11 +52,13 @@ func Mp3Handler(w http.ResponseWriter, r *http.Request) {
 		}
 
 		// Form the query for the song request
-		query, err := GetSongQuery("musicplayer", "music", songInfo)
+		query, err = GetSongQuery("mediaplayer", "music", songInfo)
 		if err != nil {
 			log.Fatalf("Error getting query: %s", err)
 		}
+	}
 
+	if query != "" {
 		// Retrieve the song from the database.
 		songRow := db.QueryRow(query)
 		song, scanErr := ScanSongFromRow(songRow)
@@ -85,7 +105,7 @@ func TableHandler(w http.ResponseWriter, r *http.Request) {
 func QueryHandler(w http.ResponseWriter, r *http.Request) {
 	// Connect to database
 	db, dberr := sql.Open("postgres",
-		"user=postgres password=9K2Po2Tg4Es dbname=musicplayer sslmode=disable port=5432")
+		"user=postgres password=9K2Po2Tg4Es dbname=mediaplayer sslmode=disable port=5432")
 
 	defer db.Close()
 
@@ -102,8 +122,6 @@ func QueryHandler(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	fmt.Println(filters)
-
 	// Request the songs using the given info as a filter
 	songInfo := Song{
 		Artist:      filters["artist"],
@@ -112,7 +130,7 @@ func QueryHandler(w http.ResponseWriter, r *http.Request) {
 		AlbumArtist: filters["albumartist"],
 	}
 
-	query, err := VariableSongQuery("musicplayer", "music", songInfo)
+	query, err := VariableSongQuery("mediaplayer", "music", songInfo)
 	if err != nil {
 		// log.Fatalf("Error getting query: %s", err)
 		fmt.Printf("Error getting query: %s\n", err)
@@ -139,7 +157,8 @@ func QueryHandler(w http.ResponseWriter, r *http.Request) {
 			songs = append(songs, song)
 		}
 	}
-	fmt.Println(query, songs)
+
+	fmt.Println("Outgoing query results:", query, songs)
 
 	// Convert song list to json
 	responseBytes, jsonErr := json.Marshal(songs)
