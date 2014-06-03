@@ -81,7 +81,23 @@
 			
 			function newSearchForm(submitCallback)
 			{
-				var searchMenu = document.createElement("span");
+				searchMenu = document.createElement("span");
+				searchTable = document.createElement("table");
+				insertInput = function(name) {
+					input = document.createElement("input");
+					searchTable.innerHTML += 
+					"<tr> \
+					  <td>" + name + "</td> \
+					  <td>" + input.outerHTML + "</td>  \
+					</tr>";
+					return input;
+				}
+
+				titleSearch2 = insertInput("title")
+				artistSearch2 = insertInput("artist")
+				albumSearch2 = insertInput("album")
+
+
 				titleSearch = document.createElement("input");
 				artistSearch = document.createElement("input");
 				albumSearch = document.createElement("input")
@@ -105,10 +121,21 @@
 				searchMenu.appendChild(artistSearch)
 				searchMenu.appendChild(albumSearch)
 				
-				return searchMenu
+				return searchTable;
 			}
+
+			function addSearchParamRow(table, name)
+			{
+				// defaultText = typeof defaultType !== 'undefined' ? defaultText : 42;
+				table.insertRow(table.rows.length) = document.createElement("p");
+				para.innerHTML = name;
+				para.appendChild(document.createElement("input"));
+				return para;
+			}
+
 		</script>
 		<table id="musictable" border="1">
-		</table>	
+		</table>
+		</form> 	
 	</body>
 </html>
